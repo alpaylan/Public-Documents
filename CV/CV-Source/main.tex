@@ -1,0 +1,115 @@
+\documentclass[letter]{res}
+%\usepackage{fontspec}
+\usepackage{geometry}
+\usepackage{xcolor}
+\usepackage[utf8]{inputenc}
+\geometry{
+ a4paper,
+ total={210mm,297mm},   
+ left=10mm,
+ right=20mm,
+ top=10mm,
+ bottom=10mm,
+ bindingoffset=0mm
+ }\usepackage{fontenc}
+\usepackage{enumitem}
+\setlist{nolistsep}
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{titlesec}
+\newcommand{\secsplit}{\vspace{-2mm}}
+\newcommand{\itemsplit}{\\[3mm]}
+\newcommand{\RNum}[1]{\uppercase\expandafter{\romannumeral #1\relax}}
+\titleformat{\section}
+  {\normalfont\bfseries}{\thesection}{1em}{}[{\titlerule[0.4pt]}]
+\titlespacing{\section}
+  {0pt}% left
+  {0pt}% before sep
+  {0pt}% after sep
+  
+%\setmainfont[Mapping=tex-text]{Linux Libertine O}
+\usepackage{hyperref}
+
+\begin{document}
+\name{Alperen Keles\\[14pt]}
+
+%\address{ +905436940420 \\}
+
+\address{
+  \texttt{
+  \href{mailto:akeles@umd.edu}{akeles@umd.edu}} 
+  \hspace{14.5cm} 
+   \\
+  \texttt{\href{https://github.com/alpaylan/}{github.com/alpaylan/}} \hfill
+ \texttt{\href{https://www.linkedin.com/in/alpkeles/}{linkedin.com/in/alpkeles}}} 
+
+
+\begin{resume}
+\section{Education}
+\secsplit
+\textbf{{\sl Doctorate of Philosophy} - Computer Science} \hfill 2021-2026(Expected)\\
+University of Maryland, College Park \hfill  Maryland, USA
+\itemsplit
+\textbf{{\sl Bachelor of Engineering} - Computer Engineering}\hfill 2017-2021\\
+Middle East Technical University \hfill  Ankara, Turkey\\
+{- \sl Ranked \textbf{1713rd}, National University Entrance Examination \textbf{(top 0.1\% in 2 million)}} \\
+{- \sl GPA: 3.66/4.0 \textbf{(top 5\% in class of 229)}}
+\secsplit
+\section{Current Projects}
+\secsplit
+\textbf{Bug Mining and Injection for Benchmarking Property Based Testing}\\
+{\sl - As Part of Graduate Level Research}\\
+Creating benchmarking infrastructures for Property Based Testing tools and research using bug mining and injection.\\
+\textit{(Coq, OCaml, Python)}
+\secsplit
+\section{Research and Publications}
+\secsplit
+{\href{https://link.springer.com/chapter/10.1007\%2F978-3-030-39303-8_5}{DroPPPP: A P4 Approach to Mitigating DoS Attacks in SDN}}\\
+\textbf{The 20th World Conference On Information Security Applications} \\
+G. Simsek, H. Bostan, A. Sarica, E. Sarikaya, A. Keles, P. Angin, H. Alemdar, E. Onur
+\itemsplit
+{Protocol Verification Language}\\
+\textbf{IEEE/ACM International Symposium on Code Generation and Optimization Student \\ Research Competition(Accepted as Poster Presentation)}\\
+Alperen Keles
+\secsplit
+\section{Work Experience}
+\secsplit
+\textbf{University of Maryland - Maryland Cybersecurity Center(MC2)} \hfill Maryland, USA(Remote) \newline
+- {\sl Research Intern} \hfill July 2020 - December 2020\\
+Worked on application of Inductive Program Synthesis Techniques on Automatic \\ Exploit Generation Domain.
+\itemsplit
+\textbf{Havelsan} \hfill Ankara, Turkey \newline
+- {\sl Candidate Engineer} \hfill July 2020 - July 2021\\
+Worked on a browser based Video Conference Application. Designed and implemented \\ a novel bandwidth detection and video optimization algorithm. \\
+\textit{(Javascript, React)}
+\itemsplit
+\textbf{Emproof} \hfill Bochum, Germany \newline
+- {\sl Remote Embedded Security Engineer} \hfill January 2020 - April 2020\\
+- {\sl Embedded Security Engineering Intern} \hfill June 2019 - September 2019\\
+Worked on translation validation of binary obfuscation techniques. \\
+\textit{(C++, Z3 SMT Solver, ARM Assembly)}
+ \secsplit
+ \section{Teaching Experience}
+ \secsplit
+\textbf{University of Maryland - Computer Science Department} \hfill Maryland, USA\newline
+- {\sl Teaching Assistant for CMSC132 - Object Oriented Programming \RNum{2}} \hfill January 2022 - Present\\
+- {\sl Teaching Assistant for CMSC351 - Algorithms} \hfill August 2021 - December 2021
+\itemsplit
+\textbf{Middle East Technical University - Computer Engineering Department} \hfill Ankara, Turkey \newline
+- {\sl Student Assistant for CENG140 - C Programming} \hfill February 2019 - June 2019
+\secsplit
+\section{Previous Projects}
+\secsplit
+\textbf{Protocol Verification Language} \newline 
+-{\sl Domain Specific Language for Network Protocol Verification} \\
+Worked in core language design and developed a symbolic execution based verification engine.\\
+\textit{(Rust, Z3 SMT Solver)}
+\itemsplit
+\textbf{Network Intrusion Detection System } \newline
+-{\sl As Part of Guided Research with A Faculty Member} \\
+Created a NIDS based on CICIDS17 dataset using Random Forest Classifier.\\
+\textit{(Python, Scikit-Learn, Scipy)}
+\end{resume}
+\end{document}
+
+
+
